@@ -1,0 +1,23 @@
+body{
+    padding-top: 0;
+}
+
+/* .originToDestination{
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.rideTime {
+    font-size: 1.5rem;
+    line-height: 4rem;
+} */
+
+.ride-list{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.rideSummary {
+    margin-top: 10px;
+    line-height: 2rem;
+}

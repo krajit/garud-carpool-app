@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <!-- custon css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Garud Shuttle - Ride Register </title>
+</head>
+
+<body>
+
+    <div class="registryForm"">
+        <form>
+            <div class=" form-group row">
+        <label for="rideFormDate" class="col-sm-2 col-form-label">Date (dd-mm-yyyy)</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="rideFormDate" placeholder="05-02-2018">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="rideFormTime" class="col-sm-2 col-form-label">Time (hhmm)</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="rideFormTime" placeholder="1500">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="rideFormOrigin" class="col-sm-2 col-form-label">Origin</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="rideFormOrigin" placeholder="SNU or Greater Noida">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="rideFormDestination" class="col-sm-2 col-form-label">Destination</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="rideFormDestination" placeholder="SNU or Greater Noida">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="rideFormFare" class="col-sm-2 col-form-label">Fare (Rs. per Km)</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="rideFormFare" placeholder=5>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="rideRegisterFormSubmitButton">Register</button>
+        </div>
+    </div>
+
+    </form>
+    </div>
+
+
+
+
+
+    <!-- firebase setup -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-messaging.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-functions.js"></script> -->
+
+    <!-- Comment out (or don't include) services that you don't want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-storage.js"></script> -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="register.js"></script>
+</body>
+
+</html>
